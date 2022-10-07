@@ -23,7 +23,7 @@ export default function Props(props) {
             <button onClick={()=>{
                 setAge(props.age)
             }}>Reset</button>
-            <span>프로퍼티로 받은 값은 변경이 불가능하나, state로 받아서 컴포넌트안에서 재사용은 가능함</span>
+            <span>프로퍼티로 받은 값은 readOnly, state로 받아서 컴포넌트안에서 재사용은 가능함</span>
         </div>
     )
 };

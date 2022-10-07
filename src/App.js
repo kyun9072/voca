@@ -6,6 +6,7 @@ import State from './component/State';
 import styles from './App.module.css'
 import Props from './component/Properties';
 import EventHandle from './component/EventHandle';
+import UserName from './component/UserName';
 
 function App() {
  
@@ -17,6 +18,7 @@ function App() {
     <EventHandle/>
     <State/>
     <Props age={30}/>
+    <UserName name={"이름"}/>
   </div>
       
 }

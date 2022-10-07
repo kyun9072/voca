@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UserName from "./UserName";
 
 const State = () => {
     const [name, setName] = useState("Mike");
@@ -14,6 +15,8 @@ const State = () => {
             <button onClick={()=>{
                 changeName(setName(name === "Mike" ? "Jane" : "Mike"));
             }}>CHANGE</button>
+            <p>이름이 위에선 state, 아래에선 props 로 사용됨</p>
+            <UserName name={name}/>
         </div>
     )
 }
