@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './component/Hello'
+import Welcome from './component/Welcome';
+import World from './component/World';
+import State from './component/State';
+import styles from './App.module.css'
+import Props from './component/Properties';
+import EventHandle from './component/EventHandle';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+  return  <div className="App">
+    <Hello/>
+    <World/>
+    <div className={styles.box}>App.JS</div>
+    <Welcome/>
+    <EventHandle/>
+    <State/>
+    <Props age={30}/>
+  </div>
+      
 }
 
 export default App;
